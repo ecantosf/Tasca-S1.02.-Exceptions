@@ -1,4 +1,4 @@
-# POO Inheritance & Polymorphism Exercises 
+# Excepcions Exercises 
 
 ## Description
 In this task, we will learn to work with Java's error management system 
