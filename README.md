@@ -56,3 +56,9 @@ No aplicable.
 
 ## Diagrams and Technical Decisions
 No aplicable.
+
+## Related to Exceptions in Level 1
+**Question:** What is the difference between a checked exception and an 
+unchecked exception like RuntimeException?
+**Answer:** In general, checked exceptions are for external and predictable 
+errors, while unchecked exceptions are for internal application bugs.
