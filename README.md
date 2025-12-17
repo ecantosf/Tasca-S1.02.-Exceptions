@@ -45,7 +45,7 @@ and proper error handling.
 - Version Control: Git
 
 ## Installation and Execution
-1. Create GitHub repository (https://github.com/ecantosf/Tasca-S1.01.-Herencia-i-Polimorfisme.git)
+1. Create GitHub repository
 2. Open the project in IntelliJ IDEA.
 3. Configure JDK (Java 21 or later recommended).
 4. Run the main class of each exercise directly from the IDE.
