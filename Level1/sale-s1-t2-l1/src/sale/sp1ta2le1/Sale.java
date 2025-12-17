@@ -20,20 +20,18 @@ public class Sale {
         return totalPrice;
     }
 
-    public void addProduct(Product product) {
-        products.add(product);
-        totalPrice += product.getPrice();
-    }
-
-    public void calculateTotal() throws EmptySaleException {
+    public double calculateTotal() throws EmptySaleException {
         if (products.isEmpty()) {
             throw new EmptySaleException();
         }
 
-        totalPrice = 0.0;
-        for (int i = 0; i < products.size(); i++) {
-            totalPrice += products.get(i).getPrice();
+        // Calcular sempre a partir dels productes actuals
+        double calculatedTotal = 0.0;
+        for (Product product : products) {
+            calculatedTotal += product.getPrice();
         }
+        this.totalPrice = calculatedTotal; // Mantenir sincronitzat
+        return calculatedTotal;
     }
 
 }
