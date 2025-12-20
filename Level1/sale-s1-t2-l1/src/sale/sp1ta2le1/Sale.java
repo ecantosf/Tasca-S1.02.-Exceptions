@@ -25,12 +25,11 @@ public class Sale {
             throw new EmptySaleException();
         }
 
-        // Calcular sempre a partir dels productes actuals
         double calculatedTotal = 0.0;
         for (Product product : products) {
             calculatedTotal += product.getPrice();
         }
-        this.totalPrice = calculatedTotal; // Mantenir sincronitzat
+        this.totalPrice = calculatedTotal;
         return calculatedTotal;
     }
 
